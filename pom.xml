@@ -15,15 +15,16 @@
     <parent>
         <groupId>com.github.yexuejc.yexuejc-springboot</groupId>
         <artifactId>yexuejc-springboot-parent</artifactId>
-        <version>1.0.4</version>
+        <version>1.0.6</version>
     </parent>
     <properties>
-        <yexuejc.base.version>1.0.0</yexuejc.base.version>
+        <yexuejc.base.version>1.1.0</yexuejc.base.version>
         <java.version>1.8</java.version>
 
         <!-- Spring Cloud 版本 -->
         <spring-cloud.version>Edgware.RELEASE</spring-cloud.version>
-        <yexuejc.base.version>1.0.0</yexuejc.base.version>
+        <yexuejc.base.version>1.1.0</yexuejc.base.version>
+        <yexuejc-springboot-base.version>1.0.6</yexuejc-springboot-base.version>
     </properties>
 
     <dependencyManagement>
@@ -32,7 +33,7 @@
             <dependency>
                 <groupId>com.github.yexuejc.yexuejc-springboot</groupId>
                 <artifactId>yexuejc-springboot-base</artifactId>
-                <version>${parent.version}</version>
+                <version>${yexuejc-springboot-base.version}</version>
             </dependency>
             <!--https://gitee.com/incloudcode/yexuejc-base.git-->
             <dependency>
@@ -70,6 +71,10 @@
             </plugin>
         </plugins>
     </build>
-
+    <modules>
+        <module>yexuejc-eureka</module>
+        <module>yexuejc-config</module>
+        <module>simple-api</module>
+    </modules>
 
 </project>
