@@ -24,18 +24,21 @@
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-eureka</artifactId>
         </dependency>
-
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-commons</artifactId>
+        </dependency>
 
         <!--base 引用-->
+        <!--<dependency>-->
+            <!--<groupId>com.github.yexuejc.yexuejc-springboot</groupId>-->
+            <!--<artifactId>yexuejc-springboot-base</artifactId>-->
+        <!--</dependency>-->
         <dependency>
-            <groupId>com.github.yexuejc.yexuejc-springboot</groupId>
+            <groupId>com.yexuejc.springboot</groupId>
             <artifactId>yexuejc-springboot-base</artifactId>
         </dependency>
-        <!--https://gitee.com/incloudcode/yexuejc-base.git-->
-        <dependency>
-            <groupId>com.github.yexuejc</groupId>
-            <artifactId>yexuejc-base</artifactId>
-        </dependency>
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter</artifactId>

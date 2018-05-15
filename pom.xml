@@ -12,10 +12,15 @@
     <description>spring cloud</description>
 
     <!--parent 引用-->
+    <!--<parent>-->
+        <!--<groupId>com.github.yexuejc.yexuejc-springboot</groupId>-->
+        <!--<artifactId>yexuejc-springboot-parent</artifactId>-->
+        <!--<version>1.0.6</version>-->
+    <!--</parent>-->
     <parent>
-        <groupId>com.github.yexuejc.yexuejc-springboot</groupId>
+        <groupId>com.yexuejc.springboot</groupId>
         <artifactId>yexuejc-springboot-parent</artifactId>
-        <version>1.0.6</version>
+        <version>1.0.7</version>
     </parent>
     <properties>
         <yexuejc.base.version>1.1.0</yexuejc.base.version>
@@ -24,23 +29,29 @@
         <!-- Spring Cloud 版本 -->
         <spring-cloud.version>Edgware.RELEASE</spring-cloud.version>
         <yexuejc.base.version>1.1.0</yexuejc.base.version>
-        <yexuejc-springboot-base.version>1.0.6</yexuejc-springboot-base.version>
+        <yexuejc-springboot-base.version>1.0.7</yexuejc-springboot-base.version>
     </properties>
 
     <dependencyManagement>
         <dependencies>
             <!--base 引用-->
-            <dependency>
-                <groupId>com.github.yexuejc.yexuejc-springboot</groupId>
-                <artifactId>yexuejc-springboot-base</artifactId>
-                <version>${yexuejc-springboot-base.version}</version>
-            </dependency>
+            <!--<dependency>-->
+                <!--<groupId>com.github.yexuejc.yexuejc-springboot</groupId>-->
+                <!--<artifactId>yexuejc-springboot-base</artifactId>-->
+                <!--<version>${yexuejc-springboot-base.version}</version>-->
+            <!--</dependency>-->
             <!--https://gitee.com/incloudcode/yexuejc-base.git-->
+            <!--<dependency>-->
+                <!--<groupId>com.github.yexuejc</groupId>-->
+                <!--<artifactId>yexuejc-base</artifactId>-->
+                <!--<version>${yexuejc.base.version}</version>-->
+            <!--</dependency>-->
             <dependency>
-                <groupId>com.github.yexuejc</groupId>
-                <artifactId>yexuejc-base</artifactId>
-                <version>${yexuejc.base.version}</version>
+            <groupId>com.yexuejc.springboot</groupId>
+            <artifactId>yexuejc-springboot-base</artifactId>
+            <version>${yexuejc-springboot-base.version}</version>
             </dependency>
+
 
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
